@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.btn-group {
+  display: flex;
+
+  button {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found {
+  width: 100%;
+  height: 100%;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.xy-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.x-between {
+  justify-content: space-between;
+}
+
+.to-right {
+  justify-content: flex-end;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}

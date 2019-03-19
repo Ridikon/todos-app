@@ -1,0 +1,8 @@
+<app-task-form (addTask)="updateTaskList($event)"></app-task-form>
+
+<app-task
+	*ngFor="let task of tasks; let i = index"
+	[taskItem]="task"
+	[taskIndex]="i"
+	(deleteTask)="deleteTask($event)">
+</app-task>

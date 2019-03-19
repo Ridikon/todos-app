@@ -1,0 +1,22 @@
+<mat-nav-list>
+	<mat-list-item>
+		<span matLine><b>{{ taskIndex + 1 }}.</b> {{ taskItem.taskName }}</span>
+		<div class="btn-group">
+			<button
+				[routerLink]="['/task-list/details', taskItem.id]"
+				mat-raised-button
+				color="primary">
+				Details
+			</button>
+			<button
+				[routerLink]="['/task-list/edit', taskItem.id]"
+				mat-raised-button
+				color="accent">
+				Edit
+			</button>
+			<button mat-icon-button color="warn" (click)="onDeleteTask(taskIndex)">
+				<mat-icon>clear</mat-icon>
+			</button>
+		</div>
+	</mat-list-item>
+</mat-nav-list>
