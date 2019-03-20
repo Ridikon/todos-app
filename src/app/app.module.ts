@@ -16,14 +16,21 @@ import { TaskListModule } from './task-list/task-list.module';
 import { TaskFormModule } from './task-form/task-form.module';
 
 // Components
-import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { AddTaskComponent } from './add-task/add-task.component';
+import {TaskDetailsComponent} from "./task/task-details/task-details.component";
+import {TaskEditComponent} from "./task/task-edit/task-edit.component";
+import {TaskModule} from "./task/task.module";
+import {TaskComponent} from "./task/task.component";
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
         HomeComponent,
+        AddTaskComponent,
+	    TaskDetailsComponent,
+	    TaskEditComponent,
+
     ],
     imports: [
         BrowserModule,
@@ -33,7 +40,8 @@ import { HomeComponent } from './home/home.component';
         MaterialModule,
         NotFoundModule,
         TaskListModule,
-        TaskFormModule
+        TaskFormModule,
+	    // TaskModule
     ],
     providers: [AuthService, AuthGuard],
     bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ export class TaskComponent {
     @Input() taskItem: ITask;
     @Input() taskIndex;
     @Output() deleteTask = new EventEmitter<number>();
+
     constructor(private auth: AuthService) {}
 
     onDeleteTask(id: number) {

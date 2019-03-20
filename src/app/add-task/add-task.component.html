@@ -1,0 +1,24 @@
+<a mat-button routerLink="/task-list">Back to list</a>
+
+<mat-card>
+  <form [formGroup]="form" (submit)="onSubmit()" novalidate>
+    <div class="form-container">
+      <mat-form-field>
+        <input matInput formControlName="taskName" type="text" placeholder="Task name">
+        <mat-error>Task name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="taskEmail" type="email" placeholder="Task email">
+        <mat-error>Email is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+					<textarea matInput matTextareaAutosize="true" formControlName="taskDesc" type="text"
+                              placeholder="Task description"></textarea>
+        <mat-error>Description is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="is-flex to-right m-t-10">
+      <button [disabled]="!form.valid" type="submit" mat-raised-button color="primary">Add</button>
+    </div>
+  </form>
+</mat-card>

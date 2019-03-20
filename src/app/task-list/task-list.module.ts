@@ -7,16 +7,12 @@ import { TaskListRoutingModule } from './task-list.routing.module';
 import { TaskFormModule } from '../task-form/task-form.module';
 
 import { TasksComponent } from './tasks.component';
-import { TaskEditComponent } from './task-edit/task-edit.component';
-import { TaskDetailsComponent } from './task-details/task-details.component';
 import { TaskComponent } from '../task/task.component';
 
 @NgModule({
     declarations: [
-        TaskComponent,
         TasksComponent,
-        TaskDetailsComponent,
-        TaskEditComponent
+	    TaskComponent
     ],
     imports: [
         CommonModule,

@@ -3,13 +3,13 @@
 		<span matLine><b>{{ taskIndex + 1 }}.</b> {{ taskItem.taskName }}</span>
 		<div class="btn-group">
 			<button
-				[routerLink]="['/task-list/details', taskItem.id]"
+				[routerLink]="['/details', taskItem.id]"
 				mat-raised-button
 				color="primary">
 				Details
 			</button>
 			<button
-				[routerLink]="['/task-list/edit', taskItem.id]"
+				[routerLink]="['/edit', taskItem.id]"
 				mat-raised-button
 				color="accent">
 				Edit
