@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ITask } from '../../task.interface';
+import { ITask } from '../../common/interfaces/task.interface';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

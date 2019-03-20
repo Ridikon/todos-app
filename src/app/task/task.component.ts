@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { ITask } from '../task.interface';
+import { ITask } from '../common/interfaces/task.interface';
 import { AuthService } from '../common/services/auth.service';
 
 @Component({

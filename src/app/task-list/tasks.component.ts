@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
-import { ITask } from '../task.interface';
-import {AuthService} from "../common/services/auth.service";
-import {Router} from "@angular/router";
+import { ITask } from '../common/interfaces/task.interface';
+import { AuthService } from '../common/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-tasks',
@@ -31,7 +31,8 @@ export class TasksComponent implements OnDestroy, OnInit {
         }
     ];
 
-    constructor(public auth: AuthService, public router: Router) {}
+    constructor(public auth: AuthService, public router: Router) {
+    }
 
     ngOnInit() {
         if (localStorage.getItem('tasks')) {
@@ -49,11 +50,9 @@ export class TasksComponent implements OnDestroy, OnInit {
         this.tasks.splice(index, 1);
     }
 
-    changeLoginStatus(status: boolean) {
-        status ? this.auth.login() : this.auth.logout();
-        if(!this.auth.isAuth()) {
-	        this.router.navigate(['/']);
-        }
+    logOut() {
+        this.auth.logout();
+        this.router.navigate(['/']);
     }
 
     ngOnDestroy() {

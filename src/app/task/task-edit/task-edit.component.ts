@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { ITask } from '../../task.interface';
+import { ITask } from '../../common/interfaces/task.interface';
 
 @Component({
     selector: 'app-task-edit',

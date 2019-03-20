@@ -12,7 +12,7 @@ import { TaskComponent } from '../task/task.component';
 @NgModule({
     declarations: [
         TasksComponent,
-	    TaskComponent
+        TaskComponent
     ],
     imports: [
         CommonModule,
@@ -22,4 +22,5 @@ import { TaskComponent } from '../task/task.component';
         TaskListRoutingModule
     ]
 })
-export class TaskListModule {}
+export class TaskListModule {
+}

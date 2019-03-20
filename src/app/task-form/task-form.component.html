@@ -1,5 +1,5 @@
 <mat-card>
-	<form [formGroup]="form" (submit)="onSubmit()" novalidate>
+	<form [formGroup]="form" novalidate>
 		<div class="form-container">
 			<mat-form-field>
 				<input matInput formControlName="taskName" type="text" placeholder="Task name">
@@ -16,7 +16,13 @@
 			</mat-form-field>
 		</div>
 		<div class="is-flex to-right m-t-10">
-			<button [disabled]="!form.valid" type="submit" mat-raised-button color="primary">Add</button>
+			<button
+                mat-raised-button color="primary"
+                type="button"
+                [disabled]="!form.valid"
+                (click)="onSubmit()">
+                Add
+            </button>
 		</div>
 	</form>
 </mat-card>

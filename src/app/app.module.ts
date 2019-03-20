@@ -11,26 +11,21 @@ import { AuthService } from './common/services/auth.service';
 
 // Modules
 import { MaterialModule } from './common/modules/material.module';
-import { NotFoundModule } from './not-found/not-found.module';
-import { TaskListModule } from './task-list/task-list.module';
 import { TaskFormModule } from './task-form/task-form.module';
 
 // Components
 import { HomeComponent } from './home/home.component';
-import { AddTaskComponent } from './add-task/add-task.component';
-import {TaskDetailsComponent} from "./task/task-details/task-details.component";
-import {TaskEditComponent} from "./task/task-edit/task-edit.component";
-import {TaskModule} from "./task/task.module";
-import {TaskComponent} from "./task/task.component";
+import { TaskDetailsComponent } from './task/task-details/task-details.component';
+import { TaskEditComponent } from './task/task-edit/task-edit.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        AddTaskComponent,
-	    TaskDetailsComponent,
-	    TaskEditComponent,
-
+        TaskDetailsComponent,
+        TaskEditComponent,
+        NotFoundComponent
     ],
     imports: [
         BrowserModule,
@@ -38,10 +33,7 @@ import {TaskComponent} from "./task/task.component";
         AppRoutingModule,
         ReactiveFormsModule,
         MaterialModule,
-        NotFoundModule,
-        TaskListModule,
-        TaskFormModule,
-	    // TaskModule
+        TaskFormModule
     ],
     providers: [AuthService, AuthGuard],
     bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ITask } from '../task.interface';
+import { ITask } from '../common/interfaces/task.interface';
 
 @Component({
     selector: 'app-task-form',

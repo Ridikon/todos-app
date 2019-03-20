@@ -5,7 +5,7 @@ import { TasksComponent } from './tasks.component';
 
 const taskListRoutes: Routes = [
     {
-        path: 'task-list',
+        path: '',
         component: TasksComponent
     }
 ];
