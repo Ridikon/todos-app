@@ -52,6 +52,7 @@ export class TasksComponent implements OnDestroy, OnInit {
 
     logOut() {
         this.auth.logout();
+	    localStorage.setItem('authStatus', 'not-authorized');
         this.router.navigate(['/']);
     }
 

@@ -15,6 +15,7 @@ export class HomeComponent {
 
     login() {
         this.auth.login();
+        localStorage.setItem('authStatus', 'authorized');
         this.router.navigate(['/task-list']);
     }
 }

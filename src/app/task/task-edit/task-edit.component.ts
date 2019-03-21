@@ -42,7 +42,7 @@ export class TaskEditComponent implements OnInit {
             return item;
         });
         localStorage.setItem('tasks', JSON.stringify(data));
-        this.router.navigate(['/']);
+        this.router.navigate(['/task-list']);
     }
 
 }
