@@ -1,42 +1,33 @@
-import { AppComponent } from './app.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+    MatButtonModule,
+    MatCardModule,
+    MatToolbarModule
+} from '@angular/material';
 
-// Services
-import { AuthGuard } from './common/services/auth-guard.service';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './common/services/auth.service';
-
-// Modules
-import { MaterialModule } from './common/modules/material.module';
-import { TaskFormModule } from './task-form/task-form.module';
-
-// Components
-import { HomeComponent } from './home/home.component';
-import { TaskDetailsComponent } from './task/task-details/task-details.component';
-import { TaskEditComponent } from './task/task-edit/task-edit.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        TaskDetailsComponent,
-        TaskEditComponent,
         NotFoundComponent
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
-        ReactiveFormsModule,
-        MaterialModule,
-        TaskFormModule
+        MatButtonModule,
+        MatCardModule,
+        MatToolbarModule
     ],
-    providers: [AuthService, AuthGuard],
+    providers: [AuthService],
     bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

@@ -1,0 +1,21 @@
+<a mat-button routerLink="/tasks">Back to task list</a>
+
+<mat-card>
+    <mat-nav-list role="list">
+        <mat-list-item
+            role="listitem"
+            *ngFor="let user of users; let i = index ">
+            <span matLine><b>{{i + 1}}</b>. {{user.name}}</span>
+
+            <div class="btn-group">
+                <button
+                    [routerLink]="[user.id]"
+                    mat-raised-button
+                    color="primary">
+                    Details
+                </button>
+            </div>
+        </mat-list-item>
+    </mat-nav-list>
+</mat-card>
+

@@ -1,15 +1,15 @@
-export class AuthService {
-    isLoggedIn = false;
+import { BehaviorSubject } from 'rxjs';
 
-    isAuth(): boolean {
-        return this.isLoggedIn;
-    }
+export class AuthService {
+    isLoggedIn = new BehaviorSubject(localStorage.getItem('authStatus') === 'true');
 
     login() {
-        this.isLoggedIn = true;
+        localStorage.setItem('authStatus', 'true');
+        this.isLoggedIn.next(true);
     }
 
     logout() {
-        this.isLoggedIn = false;
+        localStorage.removeItem('authStatus');
+        this.isLoggedIn.next(false);
     }
 }
