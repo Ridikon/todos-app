@@ -13,6 +13,8 @@ export class UsersRolesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.user = this.route.parent.snapshot.data.user;
+        this.route.parent.data.subscribe(data => {
+            this.user = data.user;
+        });
     }
 }
