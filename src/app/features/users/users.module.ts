@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../common/modules/material.module';
 import { UsersRoutingModule } from './users.routing.module';
 import { UsersService } from './users.service';
-import { UsersResolver } from './users-resolver.service';
 import { UsersListComponent } from './components/users-list/users-list.component';
 import { UsersDetailsComponent } from './components/users-details/users-details.component';
 import { UsersRolesComponent } from './components/users-roles/users-roles.component';
@@ -20,6 +19,6 @@ import { UsersRolesComponent } from './components/users-roles/users-roles.compon
         MaterialModule,
         UsersRoutingModule
     ],
-    providers: [UsersService, UsersResolver]
+    providers: [UsersService]
 })
 export class UsersModule {}
