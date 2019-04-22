@@ -30,14 +30,10 @@ export class TaskComponent implements OnInit {
                 private cdr: ChangeDetectorRef) {}
 
     ngOnInit() {
-        setTimeout(() => {
-            this.test = 'new test';
-            this.cdr.markForCheck();
-        }, 3000);
-    }
-
-    click() {
-
+        // setTimeout(setTimeout() => {
+        //     this.test = 'new test';
+        //     this.cdr.markForCheck();
+        // }, 3000);
     }
 
     toEdit() {

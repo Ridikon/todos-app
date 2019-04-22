@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { UserInterface } from '../../interfaces/user.interface';
 import { UsersService } from '../../users.service';
 
@@ -10,9 +10,10 @@ import { UsersService } from '../../users.service';
 })
 export class UsersListComponent implements OnInit {
     users: UserInterface[];
-    constructor(private userService: UsersService) {}
+    constructor(private userService: UsersService, private cdr: ChangeDetectorRef) {}
 
     ngOnInit() {
         this.users = this.userService.getUsers();
+        this.cdr.markForCheck();
     }
 }
