@@ -1,1 +1,9 @@
-language: rust
+language: node_js
+node_js: stable
+script: ng build
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dist
+

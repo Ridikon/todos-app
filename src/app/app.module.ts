@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './common/services/auth.service';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
         AppRoutingModule,
         MatButtonModule,
         MatCardModule,
-        MatToolbarModule
+        MatToolbarModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     ],
     providers: [AuthService],
     bootstrap: [AppComponent]
