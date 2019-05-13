@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1557755158350,
+  "index": "https://ridikon.github.io/todos-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://ridikon.github.io/todos-app/1.9f14947eab5bd157b220.js",
+        "https://ridikon.github.io/todos-app/6.181370d39d1b2fe70c6d.js",
+        "https://ridikon.github.io/todos-app/7.b57c10cebfe96ed0fd48.js",
+        "https://ridikon.github.io/todos-app/es2015-polyfills.30c896e9c13fc0581b6a.js",
+        "https://ridikon.github.io/todos-app/favicon.ico",
+        "https://ridikon.github.io/todos-app/index.html",
+        "https://ridikon.github.io/todos-app/main.125516e091f7898c7c73.js",
+        "https://ridikon.github.io/todos-app/polyfills.481858ef51fe27531859.js",
+        "https://ridikon.github.io/todos-app/runtime.882170e5e0740c5036c4.js",
+        "https://ridikon.github.io/todos-app/styles.194b1e13ef7b82787e1c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://ridikon.github.io/todos-app/assets/icons/icon-128x128.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-144x144.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-152x152.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-192x192.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-384x384.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-512x512.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-72x72.png",
+        "https://ridikon.github.io/todos-app/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://ridikon.github.io/todos-app/1.9f14947eab5bd157b220.js": "9911b92821f46eebd341c9ba19f7a5823a2863a4",
+    "https://ridikon.github.io/todos-app/6.181370d39d1b2fe70c6d.js": "23e7a892370adbd31636ceef734e12aef9f54d4f",
+    "https://ridikon.github.io/todos-app/7.b57c10cebfe96ed0fd48.js": "8764a3d6f7eaedd5fef451757235f2df998d991c",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://ridikon.github.io/todos-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://ridikon.github.io/todos-app/es2015-polyfills.30c896e9c13fc0581b6a.js": "f8b43b55b1f8a106a8b37ec108eb75f4b737b08b",
+    "https://ridikon.github.io/todos-app/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://ridikon.github.io/todos-app/index.html": "87fb25f4f641c1fef339470dae5b93ff4454cc8e",
+    "https://ridikon.github.io/todos-app/main.125516e091f7898c7c73.js": "4668921e5b7dedb6c5bc0073bb39a1c96cbde951",
+    "https://ridikon.github.io/todos-app/polyfills.481858ef51fe27531859.js": "ef448ddee57ecea8f1f0157e9e684b2c871e2e39",
+    "https://ridikon.github.io/todos-app/runtime.882170e5e0740c5036c4.js": "01bd68561556f4b02ecb155e9eb5d510e1d74daa",
+    "https://ridikon.github.io/todos-app/styles.194b1e13ef7b82787e1c.css": "355736240f786dcfcbcb0db1e54f1341adfb2ba8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
