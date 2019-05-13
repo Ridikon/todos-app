@@ -8,7 +8,7 @@ before_script:
     - npm install -g @angular/cli
 script:
     - ng lint
-    - ng build --prod --basehref https://ridikon.github.io/todos-app/
+    - ng build --prod --base-href https://ridikon.github.io/todos-app/
 deploy:
     provider: pages
     skip_cleanup: true
