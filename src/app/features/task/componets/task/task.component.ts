@@ -1,11 +1,9 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import {
     ChangeDetectionStrategy,
-    ChangeDetectorRef,
     Component,
     EventEmitter,
     Input,
-    OnInit,
     Output
 } from '@angular/core';
 
@@ -18,23 +16,14 @@ import { AuthService } from '../../../../common/services/auth.service';
     styleUrls: ['./task.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TaskComponent implements OnInit {
+export class TaskComponent {
     @Input() taskItem: ITask;
     @Input() taskIndex;
     @Output() deleteTask = new EventEmitter<number>();
-    test = 'test';
 
     constructor(private auth: AuthService,
                 private router: Router,
-                private route: ActivatedRoute,
-                private cdr: ChangeDetectorRef) {}
-
-    ngOnInit() {
-        // setTimeout(setTimeout() => {
-        //     this.test = 'new test';
-        //     this.cdr.markForCheck();
-        // }, 3000);
-    }
+                private route: ActivatedRoute) {}
 
     toEdit() {
         this.router.navigate([this.taskItem.id, 'edit'], {relativeTo: this.route});
